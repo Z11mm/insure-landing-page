@@ -11,10 +11,10 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="./css/styles.min.css">
 
     <title>Frontend Mentor | Insure landing page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -28,15 +28,20 @@
   <body>
     <header>
       <img src="./images/logo.svg" alt="Brand Logo" />
-      <!-- <a href="./mobilepage-nav.html">
-        <img src="./images/icon-hamburger.svg" alt="Navigation Icon" />
-      </a> -->
       <nav>
         <ul>
-          <li>How we work</li>
-          <li>Blog</li>
-          <li>Account</li>
+          <a href="#">
+            <li>How we work</li>
+          </a>
+          <a href="#">
+            <li>Blog</li>
+          </a>
+          <a href="#">
+            <li>Account</li>
+          </a>
           <button>View plans</button>
+          <a href="#" style="display: none;"><img src="./images/icon-hamburger.svg" alt="Options"></a>
+          <a href="#" style="display: none;"><img src="./images/icon-close.svg" alt="Close"></a>
         </ul>
       </nav>
     </header>
