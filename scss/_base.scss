@@ -9,3 +9,15 @@ $very-light-grey: hsl(0, 0%, 98%);
 $greyish-blue: hsl(216, 30%, 68%);
 $dark-greyish-violet: hsl(273, 4%, 51%);
 
+// general styles
+header {
+  .logo {
+    height: 30%;
+    width: 30%;
+    margin: 1px 0;
+  }
+
+  .icon {
+      width: 70%;
+  }
+}
