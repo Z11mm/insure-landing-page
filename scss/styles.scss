@@ -25,7 +25,7 @@ header {
   }
 }
 
-.links-header {
+.header-links {
   li,
   button {
     display: none;
@@ -40,25 +40,95 @@ header {
   }
 
   .hero-text {
-    height: 450px;
+    height: 390px;
     text-align: center;
-    padding: 5rem 2rem 4rem;
+    padding: 5rem 1rem 1rem;
     text-align: center;
     background-color: $dark-violet;
     color: $very-light-grey;
 
     h1 {
+      font-weight: 400;
       font-family: $font-family-headings;
-      font-size: 30px;
-      margin-bottom: 0.5rem;
+      font-size: 32px;
+      margin-bottom: 0.6rem;
       line-height: 1.1;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
     }
 
     p {
       font-size: 12px;
-      line-height: 1.5;
+      line-height: 1.6;
       letter-spacing: 1px;
     }
+  }
+}
+
+// we're different
+.brand-details {
+  margin: 6rem 0 3rem;
+  padding: 1.3rem 1rem;
+  text-align: center;
+  position: relative;
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h2,
+  h3 {
+    font-family: $font-family-headings;
+    color: $very-dark-violet;
+    font-weight: 400;
+  }
+
+  p {
+    color: $dark-greyish-violet;
+  }
+
+  .borderline {
+    &::before {
+      background-color: $greyish-blue;
+      top: 0;
+      content: '';
+      height: 1px;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, 0);
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .brand-details-content {
+    margin: 3rem 0;
+
+    img {
+      margin-bottom: 1.5rem;
+      width: 22%;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+}
+
+// call to action
+.call-to-action {
+  background-color: $dark-violet;
+  margin: 0 1rem;
+  color: $very-light-grey;
+  text-align: center;
+  padding: 3rem 2rem;
+
+  h2 {
+    font-family: $font-family-headings;
   }
 }

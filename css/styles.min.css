@@ -52,8 +52,8 @@ header nav {
   margin-left: auto;
 }
 
-.links-header li,
-.links-header button {
+.header-links li,
+.header-links button {
   display: none;
 }
 
@@ -64,25 +64,92 @@ header nav {
 }
 
 .hero .hero-text {
-  height: 450px;
+  height: 390px;
   text-align: center;
-  padding: 5rem 2rem 4rem;
+  padding: 5rem 1rem 1rem;
   text-align: center;
   background-color: #2d2640;
   color: #fafafa;
 }
 
 .hero .hero-text h1 {
+  font-weight: 400;
   font-family: "DM Serif Display", sans-serif;
-  font-size: 30px;
-  margin-bottom: 0.5rem;
+  font-size: 32px;
+  margin-bottom: 0.6rem;
   line-height: 1.1;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .hero .hero-text p {
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.6;
   letter-spacing: 1px;
+}
+
+.brand-details {
+  margin: 6rem 0 3rem;
+  padding: 1.3rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.brand-details h2 {
+  font-size: 36px;
+}
+
+.brand-details h2,
+.brand-details h3 {
+  font-family: "DM Serif Display", sans-serif;
+  color: #2b272f;
+  font-weight: 400;
+}
+
+.brand-details p {
+  color: #837d87;
+}
+
+.brand-details .borderline::before {
+  background-color: #95a9c6;
+  top: 0;
+  content: '';
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.brand-details .brand-details-content {
+  margin: 3rem 0;
+}
+
+.brand-details .brand-details-content img {
+  margin-bottom: 1.5rem;
+  width: 22%;
+}
+
+.brand-details .brand-details-content h3 {
+  margin-bottom: 1rem;
+  font-size: 22px;
+}
+
+.brand-details .brand-details-content p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.call-to-action {
+  background-color: #2d2640;
+  margin: 0 1rem;
+  color: #fafafa;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.call-to-action h2 {
+  font-family: "DM Serif Display", sans-serif;
 }
 /*# sourceMappingURL=styles.min.css.map */
