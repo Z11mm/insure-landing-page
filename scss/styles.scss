@@ -123,12 +123,18 @@ header {
 // call to action
 .call-to-action {
   background-color: $dark-violet;
-  margin: 0 1rem;
+  margin: 0 1.5rem;
   color: $very-light-grey;
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 3rem 1rem 4rem;
 
   h2 {
     font-family: $font-family-headings;
+    font-size: 34px;
   }
+}
+
+// footer
+footer {
+  margin-top: 5rem;
 }

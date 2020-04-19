@@ -143,13 +143,18 @@ header nav {
 
 .call-to-action {
   background-color: #2d2640;
-  margin: 0 1rem;
+  margin: 0 1.5rem;
   color: #fafafa;
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 3rem 1rem 4rem;
 }
 
 .call-to-action h2 {
   font-family: "DM Serif Display", sans-serif;
+  font-size: 34px;
+}
+
+footer {
+  margin-top: 5rem;
 }
 /*# sourceMappingURL=styles.min.css.map */
