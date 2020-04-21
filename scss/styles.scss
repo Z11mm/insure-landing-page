@@ -2,6 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 @import 'base';
 @import 'button';
+@import 'links';
+
+%border-styles {
+  background-color: $dark-greyish-violet;
+  content: '';
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  margin-bottom: 1rem;
+  opacity: 0.4;
+}
 
 * {
   box-sizing: border-box;
@@ -88,15 +100,9 @@ header {
 
   .borderline {
     &::before {
-      background-color: $greyish-blue;
+      @extend %border-styles;
       top: 0;
-      content: '';
-      height: 1px;
-      left: 50%;
-      position: absolute;
-      transform: translate(-50%, 0);
       width: 100px;
-      margin-bottom: 1rem;
     }
   }
 
@@ -132,9 +138,4 @@ header {
     font-family: $font-family-headings;
     font-size: 34px;
   }
-}
-
-// footer
-footer {
-  margin-top: 5rem;
 }

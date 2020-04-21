@@ -1,0 +1,53 @@
+%nav-styles {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+.footer-links {
+  @extend %nav-styles;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  h3 {
+    color: $dark-greyish-violet;
+  }
+
+  nav {
+    @extend %nav-styles;
+    margin: 1.2rem 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $very-dark-violet;
+    line-height: 1.5;
+    padding: 3px 0;
+  }
+}
+
+footer {
+  margin-top: 5rem;
+  position: relative;
+  background-color: hsl(273, 4%, 97%);
+
+  div:first-child {
+    background: url('../images/bg-pattern-footer-mobile.svg') top left/100% 90% no-repeat;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 4rem 0 1rem;
+    line-height: 3;
+
+    &::after {
+      @extend %border-styles;
+      bottom: 74%;
+      width: 80%;
+    }
+  }
+
+  .social {
+    letter-spacing: 10px;
+  }
+}

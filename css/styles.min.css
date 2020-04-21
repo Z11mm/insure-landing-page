@@ -25,6 +25,74 @@ header .icon {
   margin-top: 1.5rem;
 }
 
+.footer-links, .footer-links nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  text-align: center;
+}
+
+.footer-links {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-links h3 {
+  color: #837d87;
+}
+
+.footer-links nav {
+  margin: 1.2rem 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #2b272f;
+  line-height: 1.5;
+  padding: 3px 0;
+}
+
+footer {
+  margin-top: 5rem;
+  position: relative;
+  background-color: #f7f7f8;
+}
+
+footer div:first-child {
+  background: url("../images/bg-pattern-footer-mobile.svg") top left/100% 90% no-repeat;
+  text-align: center;
+  margin: 2rem 0;
+  padding: 4rem 0 1rem;
+  line-height: 3;
+}
+
+footer div:first-child::after {
+  bottom: 74%;
+  width: 80%;
+}
+
+footer .social {
+  letter-spacing: 10px;
+}
+
+footer div:first-child::after, .brand-details .borderline::before {
+  background-color: #837d87;
+  content: '';
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  margin-bottom: 1rem;
+  opacity: 0.4;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -110,16 +178,8 @@ header nav {
 }
 
 .brand-details .borderline::before {
-  background-color: #95a9c6;
   top: 0;
-  content: '';
-  height: 1px;
-  left: 50%;
-  position: absolute;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
   width: 100px;
-  margin-bottom: 1rem;
 }
 
 .brand-details .brand-details-content {
@@ -152,9 +212,5 @@ header nav {
 .call-to-action h2 {
   font-family: "DM Serif Display", sans-serif;
   font-size: 34px;
-}
-
-footer {
-  margin-top: 5rem;
 }
 /*# sourceMappingURL=styles.min.css.map */
