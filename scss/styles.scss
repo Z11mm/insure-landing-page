@@ -38,9 +38,12 @@ header {
 }
 
 .header-links {
-  li,
-  button {
+  .options {
     display: none;
+  }
+
+  .icon {
+    width: 70%;
   }
 }
 
@@ -52,6 +55,7 @@ header {
   }
 
   .hero-text {
+    background: url('../images/bg-pattern-intro-left-mobile.svg') no-repeat;
     height: 390px;
     text-align: center;
     padding: 5rem 1rem 1rem;
@@ -82,6 +86,13 @@ header {
   padding: 1.3rem 1rem;
   text-align: center;
   position: relative;
+
+  &::before {
+    content: url('../images/bg-pattern-intro-right-mobile.svg');
+    position: absolute;
+    top: -250px;
+    right: 0;
+  }
 
   h2 {
     font-size: 36px;
@@ -128,11 +139,12 @@ header {
 
 // call to action
 .call-to-action {
-  background-color: $dark-violet;
+  // background-color: $dark-violet;
   margin: 0 1.5rem;
   color: $very-light-grey;
   text-align: center;
   padding: 3rem 1rem 4rem;
+  background: url('../images/bg-pattern-how-we-work-mobile.svg') $dark-violet no-repeat top right/150px 90% ;
 
   h2 {
     font-family: $font-family-headings;

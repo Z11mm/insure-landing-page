@@ -6,10 +6,6 @@ header .logo {
   margin: 1px 0;
 }
 
-header .icon {
-  width: 70%;
-}
-
 .button {
   outline: none;
   padding: 10px 22px;
@@ -120,9 +116,12 @@ header nav {
   margin-left: auto;
 }
 
-.header-links li,
-.header-links button {
+.header-links .options {
   display: none;
+}
+
+.header-links .icon {
+  width: 70%;
 }
 
 .hero .hero-image {
@@ -132,6 +131,7 @@ header nav {
 }
 
 .hero .hero-text {
+  background: url("../images/bg-pattern-intro-left-mobile.svg") no-repeat;
   height: 390px;
   text-align: center;
   padding: 5rem 1rem 1rem;
@@ -160,6 +160,13 @@ header nav {
   padding: 1.3rem 1rem;
   text-align: center;
   position: relative;
+}
+
+.brand-details::before {
+  content: url("../images/bg-pattern-intro-right-mobile.svg");
+  position: absolute;
+  top: -250px;
+  right: 0;
 }
 
 .brand-details h2 {
@@ -202,11 +209,11 @@ header nav {
 }
 
 .call-to-action {
-  background-color: #2d2640;
   margin: 0 1.5rem;
   color: #fafafa;
   text-align: center;
   padding: 3rem 1rem 4rem;
+  background: url("../images/bg-pattern-how-we-work-mobile.svg") #2d2640 no-repeat top right/150px 90%;
 }
 
 .call-to-action h2 {
