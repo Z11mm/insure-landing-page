@@ -12,13 +12,10 @@ $dark-greyish-violet: hsl(273, 4%, 51%);
 
 // general styles
 header {
+  position: relative;
   .logo {
     height: 30%;
     width: 30%;
     margin: 1px 0;
   }
-
-  // .icon {
-  //   width: 15%;
-  // }
 }

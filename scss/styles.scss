@@ -27,26 +27,6 @@ body {
   background-color: $very-light-grey;
 }
 
-header {
-  display: flex;
-  padding: 1rem;
-  align-items: center;
-
-  nav {
-    margin-left: auto;
-  }
-}
-
-.header-links {
-  .options {
-    display: none;
-  }
-
-  .icon {
-    width: 70%;
-  }
-}
-
 .hero {
   .hero-image {
     background-image: url('../images/image-intro-mobile.jpg');
@@ -139,7 +119,6 @@ header {
 
 // call to action
 .call-to-action {
-  // background-color: $dark-violet;
   margin: 0 1.5rem;
   color: $very-light-grey;
   text-align: center;
@@ -149,5 +128,9 @@ header {
   h2 {
     font-family: $font-family-headings;
     font-size: 34px;
+  }
+
+  button {
+    margin-top: 1.5rem;
   }
 }
