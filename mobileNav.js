@@ -22,6 +22,6 @@ hamburger.addEventListener('click', () => {
   toggleMenu();
 });
 
-close.addEventListener('click', () => {
-  !toggleMenu();
-});
+// close.addEventListener('click', () => {
+//   !toggleMenu();
+// });
