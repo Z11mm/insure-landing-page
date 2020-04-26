@@ -4,23 +4,39 @@
   text-align: center;
 }
 
-// .options-open {
-//   width: 100%;
-//   text-align: center;
-//   position: absolute;
-//   background: url('../images/bg-pattern-mobile-nav.svg') $dark-violet;
-// }
+header {
+  position: relative;
+}
+
+.options-open {
+  @extend %nav-styles;
+  text-transform: uppercase;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  padding: 1rem 0;
+  background: url('../images/bg-pattern-mobile-nav.svg') $dark-violet no-repeat bottom/100% 180px;
+
+  button {
+    width: 70%;
+    margin: 1rem auto 0;
+    font-size: 14px;
+  }
+}
 
 .header-links {
+  display: flex;
+  align-items: center;
 
   .options {
     display: none;
   }
 
   .icon {
-    width: 10%;
-    right: 0;
-    top: 0;
+    margin-left: auto;
   }
 
   .close {
@@ -29,8 +45,8 @@
 
   a {
     text-decoration: none;
-    color: black; //$very-light-grey;
-    padding: 14px 16px;
+    color: $very-light-grey;
+    padding: 14px 18px;
   }
 }
 
