@@ -4,6 +4,14 @@
   text-align: center;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 header {
   position: relative;
 }
@@ -18,7 +26,8 @@ header {
   top: 100%;
   z-index: 1;
   padding: 1rem 0;
-  background: url('../images/bg-pattern-mobile-nav.svg') $dark-violet no-repeat bottom/100% 180px;
+  background: url('../images/bg-pattern-mobile-nav.svg') $dark-violet no-repeat
+    bottom/100% 180px;
 
   button {
     width: 70%;
@@ -31,16 +40,8 @@ header {
   display: flex;
   align-items: center;
 
-  .options {
-    display: none;
-  }
-
   .icon {
     margin-left: auto;
-  }
-
-  .close {
-    display: none;
   }
 
   a {

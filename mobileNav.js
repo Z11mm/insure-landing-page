@@ -1,27 +1,24 @@
 const hamburger = document.querySelector('#hamburger');
-const close = document.querySelector('.close');
+const close = document.querySelector('#exit');
 
 const toggleMenu = () => {
   const links = document.querySelector('.options');
-  console.log(links);
-  // if (links.style.display === 'block') {
-  //   links.style.display = 'none';
-  //   close.style.display = 'none';
-  // } else {
-  //   links.style.display = 'block';
-  //   close.style.display = 'block';
-  // }
+
   if (links.classList.toggle('options-open')) {
-    links.classList.remove('options')
+    links.classList.remove('hide');
+    hamburger.classList.add('hide');
+    close.classList.remove('hide');
   } else {
-    links.classList.add('options')
-  };
+    links.classList.add('hide');
+    hamburger.classList.remove('hide');
+    close.classList.add('hide');
+  }
 };
 
 hamburger.addEventListener('click', () => {
   toggleMenu();
 });
 
-// close.addEventListener('click', () => {
-//   !toggleMenu();
-// });
+close.addEventListener('click', () => {
+  !toggleMenu();
+});

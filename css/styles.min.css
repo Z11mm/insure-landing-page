@@ -25,6 +25,14 @@
   text-align: center;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 header {
   position: relative;
 }
@@ -56,16 +64,8 @@ header {
           align-items: center;
 }
 
-.header-links .options {
-  display: none;
-}
-
 .header-links .icon {
   margin-left: auto;
-}
-
-.header-links .close {
-  display: none;
 }
 
 .header-links a {
