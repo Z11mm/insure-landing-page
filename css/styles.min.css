@@ -175,6 +175,10 @@ body {
   letter-spacing: 1px;
 }
 
+.hero .hero-text button {
+  margin-top: 2rem;
+}
+
 .brand-details {
   margin: 6rem 0 3rem;
   padding: 1.3rem 1rem;
@@ -243,5 +247,15 @@ body {
 
 .call-to-action button {
   margin-top: 1.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: #837d87;
 }
 /*# sourceMappingURL=styles.min.css.map */
