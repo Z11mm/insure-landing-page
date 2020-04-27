@@ -2,7 +2,7 @@ const hamburger = document.querySelector('#hamburger');
 const close = document.querySelector('#exit');
 
 const toggleMenu = () => {
-  const links = document.querySelector('.options');
+  const links = document.querySelector('#options');
 
   if (links.classList.toggle('options-open')) {
     links.classList.remove('hide');

@@ -1,0 +1,25 @@
+@media screen and (min-width: 600px) {
+  .main-container {
+    padding: 0 5rem;
+  }
+
+  .header-links {
+    #options {
+      display: block;
+      margin-left: auto;
+
+      a {
+        color: $dark-greyish-violet;
+      }
+
+      .button {
+          border-color: $very-dark-violet;
+          color: $very-dark-violet;
+      }
+    }
+
+    .icon {
+      display: none;
+    }
+  }
+}

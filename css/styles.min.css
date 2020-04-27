@@ -119,6 +119,26 @@ footer .social {
   letter-spacing: 10px;
 }
 
+@media screen and (min-width: 600px) {
+  .main-container {
+    padding: 0 5rem;
+  }
+  .header-links #options {
+    display: block;
+    margin-left: auto;
+  }
+  .header-links #options a {
+    color: #837d87;
+  }
+  .header-links #options .button {
+    border-color: #2b272f;
+    color: #2b272f;
+  }
+  .header-links .icon {
+    display: none;
+  }
+}
+
 footer div:first-child::after, .brand-details .borderline::before {
   background-color: #837d87;
   content: '';
