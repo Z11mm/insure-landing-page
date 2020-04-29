@@ -72,7 +72,7 @@ header {
 .header-links a {
   text-decoration: none;
   color: #fafafa;
-  padding: 14px 18px;
+  padding: 14px 0;
 }
 
 .footer-links {
@@ -169,7 +169,7 @@ body {
 }
 
 .hero .hero-image {
-  background: url("../images/image-intro-mobile.jpg") no-repeat;
+  background: url("../images/image-intro-mobile.jpg") no-repeat center/100%;
   width: 100%;
   height: 450px;
 }
@@ -281,7 +281,7 @@ body {
   .main-container > header,
   footer,
   section:not(.hero) {
-    padding: 0 9rem;
+    padding: 0 10rem;
   }
   .header-links #options {
     display: block;
@@ -309,7 +309,7 @@ body {
     position: absolute;
     background: url("../images/image-intro-desktop.jpg") no-repeat;
     background-size: 600px;
-    height: 700px;
+    height: 650px;
     left: 48%;
     top: 13%;
     z-index: 1;
@@ -338,10 +338,48 @@ body {
     z-index: 1;
   }
   .brand-details {
-    margin-top: 15rem;
+    margin-top: 13rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    text-align: left;
+    position: relative;
+  }
+  .brand-details h2 {
+    font-size: 56px;
+  }
+  .brand-details .borderline {
+    margin-bottom: 2rem;
+  }
+  .brand-details .borderline::before {
+    left: 210px;
+    width: 100px;
+  }
+  .brand-details .brand-details-content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+  }
+  .brand-details .brand-details-content img {
+    width: 65px;
   }
   .brand-details::before {
-    content: '';
+    content: url("../images//bg-pattern-intro-left-desktop.svg");
+    position: absolute;
+    top: -500px;
+    left: -85rem;
+  }
+  .call-to-action {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: url("../images/bg-pattern-how-we-work-desktop.svg") #2d2640 no-repeat top right;
   }
 }
 /*# sourceMappingURL=styles.min.css.map */
