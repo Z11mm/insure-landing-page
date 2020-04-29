@@ -376,10 +376,23 @@ body {
   }
   .call-to-action {
     margin: 0;
+    padding: 3rem 4rem 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: url("../images/bg-pattern-how-we-work-desktop.svg") #2d2640 no-repeat top right;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: url("../images/bg-pattern-how-we-work-desktop.svg") #2d2640 no-repeat top right/350px;
+  }
+  .call-to-action h2 {
+    width: 33%;
+    font-size: 40px;
+    text-align: left;
+    line-height: 1;
+  }
+  .call-to-action button {
+    margin-left: auto;
   }
 }
 /*# sourceMappingURL=styles.min.css.map */

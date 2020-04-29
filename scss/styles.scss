@@ -230,7 +230,8 @@ body {
 
     .borderline {
       margin-bottom: 2rem;
-      &::before {        // color: $dark-violet;
+      &::before {
+        // color: $dark-violet;
         left: 210px;
         width: 100px;
       }
@@ -261,9 +262,22 @@ body {
 
   .call-to-action {
     margin: 0;
+    padding: 3rem 4rem 4rem;
     display: flex;
+    align-items: center;
     // justify-content: space-between;
     background: url('../images/bg-pattern-how-we-work-desktop.svg') $dark-violet
-    no-repeat top right;
+      no-repeat top right/350px;
+
+    h2 {
+      width: 33%;
+      font-size: 40px;
+      text-align: left;
+      line-height: 1;
+    }
+
+    button {
+      margin-left: auto;
+    }
   }
 }
