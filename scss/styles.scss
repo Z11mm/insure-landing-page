@@ -5,16 +5,7 @@
 @import 'links';
 @import 'borders';
 
-// %border-styles {
-//   background-color: $dark-greyish-violet;
-//   content: '';
-//   height: 1px;
-//   left: 50%;
-//   position: absolute;
-//   transform: translate(-50%, 0);
-//   margin-bottom: 1rem;
-//   opacity: 0.4;
-// }
+// Page styles with active states for buttons
 
 * {
   box-sizing: border-box;
@@ -244,7 +235,6 @@ body {
     .borderline {
       margin-bottom: 2rem;
       &::before {
-        // color: $dark-violet;
         left: 210px;
         width: 100px;
       }
@@ -274,7 +264,6 @@ body {
     padding: 3rem 4rem 4rem;
     display: flex;
     align-items: center;
-    // justify-content: space-between;
     background: url('../images/bg-pattern-how-we-work-desktop.svg') $dark-violet
       no-repeat top right/350px;
 
