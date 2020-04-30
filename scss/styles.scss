@@ -26,6 +26,7 @@ body {
   font-family: $font-family-body;
   max-width: 100%;
   background-color: $very-light-grey;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -246,10 +247,6 @@ body {
       img {
         width: 65px;
       }
-
-      // p {
-      //   width: 70%;
-      // }
     }
 
     &::before {
@@ -278,6 +275,47 @@ body {
 
     button {
       margin-left: auto;
+    }
+  }
+
+  footer {
+    background: url('../images/bg-pattern-footer-desktop.svg') top left
+      no-repeat;
+    background-color: hsla(280, 5%, 78%, 0.1);
+
+    div:first-child {
+      display: flex;
+      align-items: center;
+      background-image: none;
+
+      &::after {
+        bottom: 210px;
+        width: 80%;
+        opacity: 0.2;
+      }
+
+      .social {
+        margin-left: auto;
+      }
+    }
+
+    .footer-links-wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: start;
+
+      .footer-links {
+        padding: 0;
+
+        h3,
+        nav {
+          text-align: left;
+        }
+
+        nav {
+          margin-top: 1.6rem;
+        }
+      }
     }
   }
 }

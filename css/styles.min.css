@@ -166,6 +166,7 @@ body {
   font-family: "Karla", sans-serif;
   max-width: 100%;
   background-color: #fafafa;
+  overflow-x: hidden;
 }
 
 .hero .hero-image {
@@ -393,6 +394,44 @@ body {
   }
   .call-to-action button {
     margin-left: auto;
+  }
+  footer {
+    background: url("../images/bg-pattern-footer-desktop.svg") top left no-repeat;
+    background-color: rgba(200, 196, 202, 0.1);
+  }
+  footer div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: none;
+  }
+  footer div:first-child::after {
+    bottom: 210px;
+    width: 80%;
+    opacity: 0.2;
+  }
+  footer div:first-child .social {
+    margin-left: auto;
+  }
+  footer .footer-links-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    justify-items: start;
+  }
+  footer .footer-links-wrapper .footer-links {
+    padding: 0;
+  }
+  footer .footer-links-wrapper .footer-links h3,
+  footer .footer-links-wrapper .footer-links nav {
+    text-align: left;
+  }
+  footer .footer-links-wrapper .footer-links nav {
+    margin-top: 1.6rem;
   }
 }
 /*# sourceMappingURL=styles.min.css.map */
