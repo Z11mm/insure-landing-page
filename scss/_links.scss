@@ -1,3 +1,5 @@
+// Basic styles for nav layout 
+
 %nav-styles {
   display: flex;
   flex-flow: column wrap;
@@ -29,7 +31,7 @@ header {
   background: url('../images/bg-pattern-mobile-nav.svg') $dark-violet no-repeat
     bottom/100% 180px;
 
-  button {
+  .button {
     width: 70%;
     margin: 1rem auto 0;
     font-size: 14px;

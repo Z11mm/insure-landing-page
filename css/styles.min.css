@@ -9,6 +9,7 @@
   border: 1px solid #fafafa;
   letter-spacing: 1px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .button {
@@ -50,7 +51,7 @@ header {
   background: url("../images/bg-pattern-mobile-nav.svg") #2d2640 no-repeat bottom/100% 180px;
 }
 
-.options-open button {
+.options-open .button {
   width: 70%;
   margin: 1rem auto 0;
   font-size: 14px;
@@ -300,6 +301,10 @@ body {
     color: #2b272f;
     margin-left: 1em;
   }
+  .header-links #options .button:hover {
+    background-color: #2b272f;
+    color: #fafafa;
+  }
   .header-links .icon {
     display: none;
   }
@@ -330,6 +335,10 @@ body {
   }
   .hero .hero-text p {
     width: 40%;
+  }
+  .hero .hero-text .button:hover {
+    background-color: #fafafa;
+    color: #2d2640;
   }
   .hero .hero-text::after {
     content: url("../images/bg-pattern-intro-right-desktop.svg");
@@ -372,8 +381,8 @@ body {
   .brand-details::before {
     content: url("../images//bg-pattern-intro-left-desktop.svg");
     position: absolute;
-    top: -500px;
-    left: -85rem;
+    top: -440px;
+    left: 0;
   }
   .call-to-action {
     margin: 0;
@@ -392,8 +401,12 @@ body {
     text-align: left;
     line-height: 1;
   }
-  .call-to-action button {
+  .call-to-action .button {
     margin-left: auto;
+  }
+  .call-to-action .button:hover {
+    background-color: #fafafa;
+    color: #2d2640;
   }
   footer {
     background: url("../images/bg-pattern-footer-desktop.svg") top left no-repeat;
@@ -415,6 +428,7 @@ body {
   }
   footer div:first-child .social {
     margin-left: auto;
+    cursor: pointer;
   }
   footer .footer-links-wrapper {
     display: -ms-grid;

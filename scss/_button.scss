@@ -1,3 +1,5 @@
+// Base button styles
+
 %btn-styles {
   outline: none;
   padding: 10px 22px;
@@ -7,6 +9,7 @@
   border: 1px solid $very-light-grey;
   letter-spacing: 1px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .button {

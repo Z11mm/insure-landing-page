@@ -169,6 +169,11 @@ body {
         border-color: $very-dark-violet;
         color: $very-dark-violet;
         margin-left: 1em;
+
+        &:hover {
+          background-color: $very-dark-violet;
+          color: $very-light-grey;
+        }
       }
     }
 
@@ -206,6 +211,13 @@ body {
 
       p {
         width: 40%;
+      }
+
+      .button {
+        &:hover {
+          background-color: $very-light-grey;
+          color: $dark-violet;
+        }
       }
 
       &::after {
@@ -252,8 +264,8 @@ body {
     &::before {
       content: url('../images//bg-pattern-intro-left-desktop.svg');
       position: absolute;
-      top: -500px;
-      left: -85rem;
+      top: -440px;
+      left: 0;
     }
   }
 
@@ -273,8 +285,13 @@ body {
       line-height: 1;
     }
 
-    button {
+    .button {
       margin-left: auto;
+
+      &:hover {
+        background-color: $very-light-grey;
+        color: $dark-violet;
+      }
     }
   }
 
@@ -296,6 +313,7 @@ body {
 
       .social {
         margin-left: auto;
+        cursor: pointer;
       }
     }
 
