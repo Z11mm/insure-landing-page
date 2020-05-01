@@ -15,7 +15,7 @@
 
 body {
   font-family: $font-family-body;
-  width: 100%;
+  max-width: 100%;
   background-color: $very-light-grey;
   overflow-x: hidden;
 }
@@ -137,13 +137,22 @@ body {
 
 // DESKTOP STYLES
 @media screen and (min-width: 600px) {
-  .main-container > header,
-  footer,
-  section:not(.hero) {
-    padding: 0 10rem;
+  html, body {
+    width: 100%;
   }
 
+  .main-container {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  // .main-container > header,
+  // footer,
+  // section:not(.hero) {
+  //   padding: 0 10rem;
+  // }
+
   .header-links {
+    display: flex;
     #options {
       display: block;
       margin-left: auto;
@@ -173,156 +182,156 @@ body {
     }
   }
 
-  .hero {
-    position: relative;
+  // .hero {
+  //   position: relative;
 
-    .hero-image {
-      position: absolute;
-      background: url('../images/image-intro-desktop.jpg') no-repeat;
-      background-size: 600px;
-      height: 650px;
-      left: 48%;
-      top: 13%;
-      z-index: 1;
-    }
+  //   .hero-image {
+  //     position: absolute;
+  //     background: url('../images/image-intro-desktop.jpg') no-repeat;
+  //     background-size: 600px;
+  //     height: 650px;
+  //     left: 48%;
+  //     top: 13%;
+  //     z-index: 1;
+  //   }
 
-    .hero-text {
-      position: relative;
-      background-image: none;
-      height: 600px;
-      text-align: left;
-      padding-left: 10rem;
-      overflow: hidden;
+  //   .hero-text {
+  //     position: relative;
+  //     background-image: none;
+  //     height: 600px;
+  //     text-align: left;
+  //     padding-left: 10rem;
+  //     overflow: hidden;
 
-      h1 {
-        font-size: 52px;
-        width: 28%;
-        margin-top: 2.5rem;
-      }
+  //     h1 {
+  //       font-size: 52px;
+  //       width: 28%;
+  //       margin-top: 2.5rem;
+  //     }
 
-      p {
-        width: 40%;
-      }
+  //     p {
+  //       width: 40%;
+  //     }
 
-      .button {
-        &:hover {
-          background-color: $very-light-grey;
-          color: $dark-violet;
-        }
-      }
+  //     .button {
+  //       &:hover {
+  //         background-color: $very-light-grey;
+  //         color: $dark-violet;
+  //       }
+  //     }
 
-      &::after {
-        content: url('../images/bg-pattern-intro-right-desktop.svg');
-        position: absolute;
-        right: 0;
-        top: -15%;
-        z-index: 1;
-      }
-    }
-  }
+  //     &::after {
+  //       content: url('../images/bg-pattern-intro-right-desktop.svg');
+  //       position: absolute;
+  //       right: 0;
+  //       top: -15%;
+  //       z-index: 1;
+  //     }
+  //   }
+  // }
 
-  .brand-details {
-    margin-top: 13rem;
-    display: flex;
-    flex-flow: column wrap;
-    text-align: left;
-    position: relative;
+  // .brand-details {
+  //   margin-top: 13rem;
+  //   display: flex;
+  //   flex-flow: column wrap;
+  //   text-align: left;
+  //   position: relative;
 
-    h2 {
-      font-size: 56px;
-    }
+  //   h2 {
+  //     font-size: 56px;
+  //   }
 
-    .borderline {
-      margin-bottom: 2rem;
-      &::before {
-        left: 210px;
-        width: 100px;
-      }
-    }
+  //   .borderline {
+  //     margin-bottom: 2rem;
+  //     &::before {
+  //       left: 210px;
+  //       width: 100px;
+  //     }
+  //   }
 
-    .brand-details-content-wrapper {
-      display: flex;
-      width: 90%;
-    }
+  //   .brand-details-content-wrapper {
+  //     display: flex;
+  //     width: 90%;
+  //   }
 
-    .brand-details-content {
-      img {
-        width: 65px;
-      }
-    }
+  //   .brand-details-content {
+  //     img {
+  //       width: 65px;
+  //     }
+  //   }
 
-    &::before {
-      content: url('../images//bg-pattern-intro-left-desktop.svg');
-      position: absolute;
-      top: -440px;
-      left: 0;
-    }
-  }
+  //   &::before {
+  //     content: url('../images//bg-pattern-intro-left-desktop.svg');
+  //     position: absolute;
+  //     top: -440px;
+  //     left: 0;
+  //   }
+  // }
 
-  .call-to-action {
-    margin: 0;
-    padding: 3rem 4rem 4rem;
-    display: flex;
-    align-items: center;
-    background: url('../images/bg-pattern-how-we-work-desktop.svg') $dark-violet
-      no-repeat top right/350px;
+  // .call-to-action {
+  //   margin: 0;
+  //   padding: 3rem 4rem 4rem;
+  //   display: flex;
+  //   align-items: center;
+  //   background: url('../images/bg-pattern-how-we-work-desktop.svg') $dark-violet
+  //     no-repeat top right/350px;
 
-    h2 {
-      width: 33%;
-      font-size: 40px;
-      text-align: left;
-      line-height: 1;
-    }
+  //   h2 {
+  //     width: 33%;
+  //     font-size: 40px;
+  //     text-align: left;
+  //     line-height: 1;
+  //   }
 
-    .button {
-      margin-left: auto;
+  //   .button {
+  //     margin-left: auto;
 
-      &:hover {
-        background-color: $very-light-grey;
-        color: $dark-violet;
-      }
-    }
-  }
+  //     &:hover {
+  //       background-color: $very-light-grey;
+  //       color: $dark-violet;
+  //     }
+  //   }
+  // }
 
-  footer {
-    background: url('../images/bg-pattern-footer-desktop.svg') top left
-      no-repeat;
-    background-color: hsla(280, 5%, 78%, 0.1);
+  // footer {
+  //   background: url('../images/bg-pattern-footer-desktop.svg') top left
+  //     no-repeat;
+  //   background-color: hsla(280, 5%, 78%, 0.1);
 
-    div:first-child {
-      display: flex;
-      align-items: center;
-      background-image: none;
+  //   div:first-child {
+  //     display: flex;
+  //     align-items: center;
+  //     background-image: none;
 
-      &::after {
-        bottom: 210px;
-        width: 80%;
-        opacity: 0.2;
-      }
+  //     &::after {
+  //       bottom: 210px;
+  //       width: 80%;
+  //       opacity: 0.2;
+  //     }
 
-      .social {
-        margin-left: auto;
-        cursor: pointer;
-      }
-    }
+  //     .social {
+  //       margin-left: auto;
+  //       cursor: pointer;
+  //     }
+  //   }
 
-    .footer-links-wrapper {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      justify-items: start;
+  //   .footer-links-wrapper {
+  //     display: grid;
+  //     grid-template-columns: repeat(4, 1fr);
+  //     justify-items: start;
 
-      .footer-links {
-        padding: 0;
+  //     .footer-links {
+  //       padding: 0;
 
-        h3,
-        nav {
-          text-align: left;
-        }
+  //       h3,
+  //       nav {
+  //         text-align: left;
+  //       }
 
-        nav {
-          margin-top: 1.6rem;
-        }
-      }
-    }
-  }
+  //       nav {
+  //         margin-top: 1.6rem;
+  //       }
+  //     }
+  //   }
+  // }
 }
