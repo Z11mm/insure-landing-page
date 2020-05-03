@@ -275,6 +275,11 @@ body {
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
   }
+  .main-container header,
+  .main-container footer,
+  .main-container section:not(.hero) {
+    padding: 0 8rem;
+  }
   .header-links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -313,31 +318,39 @@ body {
             flex-flow: row wrap;
     position: relative;
     background-color: #2d2640;
-    overflow: hidden;
   }
-  .hero .hero-image {
+  .hero .hero-content-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+  .hero .hero-content-wrapper .hero-image,
+  .hero .hero-content-wrapper .hero-text {
+    margin: 0 8rem;
+  }
+  .hero .hero-content-wrapper .hero-image {
     width: 40%;
+    height: 650px;
     position: absolute;
-    background: url("../images/image-intro-desktop.jpg") no-repeat;
+    background: url("../images/image-intro-desktop.jpg") no-repeat 50% 100%;
     right: 0;
     top: 13%;
     z-index: 1;
   }
-  .hero .hero-text {
+  .hero .hero-content-wrapper .hero-text {
     padding: 3rem 0;
     width: 100%;
+    position: relative;
     background-image: none;
     height: 600px;
     text-align: left;
-    overflow: hidden;
   }
-  .hero .hero-text h1 {
+  .hero .hero-content-wrapper .hero-text h1 {
     font-size: 52px;
     width: 28%;
     margin-top: 2rem;
     position: relative;
   }
-  .hero .hero-text h1::before {
+  .hero .hero-content-wrapper .hero-text h1::before {
     background-color: #fafafa;
     content: '';
     height: 1px;
@@ -348,17 +361,17 @@ body {
             transform: translate(-50%, 0);
     width: 100px;
   }
-  .hero .hero-text p {
+  .hero .hero-content-wrapper .hero-text p {
     width: 40%;
   }
-  .hero .hero-text .button:hover {
+  .hero .hero-content-wrapper .hero-text .button:hover {
     background-color: #fafafa;
     color: #2d2640;
   }
-  .hero .hero-text::after {
+  .hero .hero-content-wrapper .hero-text::after {
     content: url("../images/bg-pattern-intro-right-desktop.svg");
     position: absolute;
-    right: 0;
+    right: 7%;
     top: -15%;
     z-index: 1;
   }

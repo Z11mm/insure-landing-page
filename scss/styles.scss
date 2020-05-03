@@ -146,12 +146,13 @@ body {
   .main-container {
     display: flex;
     flex-flow: column wrap;
+
+    header,
+    footer,
+    section:not(.hero) {
+      padding: 0 8rem;
+    }
   }
-  // .main-container > header,
-  // footer,
-  // section:not(.hero) {
-  //   padding: 0 10rem;
-  // }
 
   .header-links {
     display: flex;
@@ -189,63 +190,71 @@ body {
     flex-flow: row wrap;
     position: relative;
     background-color: $dark-violet;
-    overflow: hidden;
 
-    .hero-image {
-      width: 40%;
-      position: absolute;
-      background: url('../images/image-intro-desktop.jpg') no-repeat;
-      // background-size: 600px;
-      // height: 650px;
-      right: 0;
-      top: 13%;
-      z-index: 1;
-    }
-
-    .hero-text {
-      padding: 3rem 0;
-      width: 100%;
-      // position: relative;
-      background-image: none;
-      height: 600px;
-      text-align: left;
+    .hero-content-wrapper {
       overflow: hidden;
+      width: 100%;
 
-      h1 {
-        font-size: 52px;
-        width: 28%;
-        margin-top: 2rem;
-        position: relative;
-
-        &::before {
-          background-color: $very-light-grey;
-          content: '';
-          height: 1px;
-          left: 20%;
-          top: 0;
-          position: absolute;
-          transform: translate(-50%, 0);
-          width: 100px;
-        }
+      .hero-image,
+      .hero-text {
+        margin: 0 8rem;
       }
 
-      p {
+      .hero-image {
         width: 40%;
-      }
-
-      .button {
-        &:hover {
-          background-color: $very-light-grey;
-          color: $dark-violet;
-        }
-      }
-
-      &::after {
-        content: url('../images/bg-pattern-intro-right-desktop.svg');
+        height: 650px;
         position: absolute;
+        background: url('../images/image-intro-desktop.jpg') no-repeat 50% 100%;
+        // background-size: 80% 100%;
         right: 0;
-        top: -15%;
+        top: 13%;
         z-index: 1;
+      }
+
+      .hero-text {
+        padding: 3rem 0;
+        width: 100%;
+        position: relative;
+        background-image: none;
+        height: 600px;
+        text-align: left;
+
+        h1 {
+          font-size: 52px;
+          width: 28%;
+          margin-top: 2rem;
+          position: relative;
+
+          &::before {
+            background-color: $very-light-grey;
+            content: '';
+            height: 1px;
+            left: 20%;
+            top: 0;
+            position: absolute;
+            transform: translate(-50%, 0);
+            width: 100px;
+          }
+        }
+
+        p {
+          width: 40%;
+        }
+
+        .button {
+          &:hover {
+            background-color: $very-light-grey;
+            color: $dark-violet;
+          }
+        }
+
+        &::after {
+          content: url('../images/bg-pattern-intro-right-desktop.svg');
+          position: absolute;
+          right: 7%;
+          top: -15%;
+          z-index: 1;
+        }
       }
     }
   }
