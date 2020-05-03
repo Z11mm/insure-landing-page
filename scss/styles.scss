@@ -212,7 +212,7 @@ body {
       }
 
       .hero-text {
-        padding: 3rem 0;
+        padding: 3rem 0 0;
         width: 100%;
         position: relative;
         background-image: none;
@@ -223,17 +223,18 @@ body {
           font-size: 52px;
           width: 28%;
           margin-top: 2rem;
+          padding-top: 3rem;
           position: relative;
 
           &::before {
             background-color: $very-light-grey;
             content: '';
             height: 1px;
-            left: 20%;
+            left: 0;
             top: 0;
             position: absolute;
-            transform: translate(-50%, 0);
             width: 100px;
+            // margin: 2rem 0;
           }
         }
 
@@ -252,7 +253,7 @@ body {
           content: url('../images/bg-pattern-intro-right-desktop.svg');
           position: absolute;
           right: 7%;
-          top: -15%;
+          top: -17%;
           z-index: 1;
         }
       }
@@ -292,7 +293,7 @@ body {
     &::before {
       content: url('../images//bg-pattern-intro-left-desktop.svg');
       position: absolute;
-      top: -440px;
+      top: -400px;
       left: 0;
     }
   }
