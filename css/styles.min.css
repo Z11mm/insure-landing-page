@@ -262,7 +262,7 @@ body {
   color: #837d87;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   html,
   body {
     width: 100%;
