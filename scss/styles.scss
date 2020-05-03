@@ -194,18 +194,14 @@ body {
     .hero-content-wrapper {
       overflow: hidden;
       width: 100%;
-
-      .hero-image,
-      .hero-text {
-        margin: 0 8rem;
-      }
+      margin-left: 8rem;
 
       .hero-image {
+        margin-right: 6rem;
         width: 40%;
         height: 650px;
         position: absolute;
         background: url('../images/image-intro-desktop.jpg') no-repeat 50% 100%;
-        // background-size: 80% 100%;
         right: 0;
         top: 13%;
         z-index: 1;
@@ -234,12 +230,11 @@ body {
             top: 0;
             position: absolute;
             width: 100px;
-            // margin: 2rem 0;
           }
         }
 
         p {
-          width: 40%;
+          width: 35%;
         }
 
         .button {
@@ -252,7 +247,7 @@ body {
         &::after {
           content: url('../images/bg-pattern-intro-right-desktop.svg');
           position: absolute;
-          right: 7%;
+          right: 0;
           top: -17%;
           z-index: 1;
         }

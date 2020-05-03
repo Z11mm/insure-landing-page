@@ -323,12 +323,10 @@ body {
   .hero .hero-content-wrapper {
     overflow: hidden;
     width: 100%;
-  }
-  .hero .hero-content-wrapper .hero-image,
-  .hero .hero-content-wrapper .hero-text {
-    margin: 0 8rem;
+    margin-left: 8rem;
   }
   .hero .hero-content-wrapper .hero-image {
+    margin-right: 6rem;
     width: 40%;
     height: 650px;
     position: absolute;
@@ -362,7 +360,7 @@ body {
     width: 100px;
   }
   .hero .hero-content-wrapper .hero-text p {
-    width: 40%;
+    width: 35%;
   }
   .hero .hero-content-wrapper .hero-text .button:hover {
     background-color: #fafafa;
@@ -371,7 +369,7 @@ body {
   .hero .hero-content-wrapper .hero-text::after {
     content: url("../images/bg-pattern-intro-right-desktop.svg");
     position: absolute;
-    right: 7%;
+    right: 0;
     top: -17%;
     z-index: 1;
   }
